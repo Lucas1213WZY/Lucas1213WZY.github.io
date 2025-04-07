@@ -2,31 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio & Projects</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 2rem; }
-    header { text-align: center; }
-    h1 { color: #333; }
-    section { margin-top: 2rem; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      color: #333;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      color: #005f73;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #007acc;
+      font-size: 1.4rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    .card a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.8rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Hello, I'm [Your Name]!</h1>
+    <h1>Hello, I'm [Wang Zhuoyu (Lucas)]!</h1>
     <p>Welcome to my portfolio and self-introduction page.</p>
   </header>
-  <section>
-    <h2>About Me</h2>
-    <p>[Write a short self-introduction here, your skills, interests, or background.]</p>
-  </section>
-  <section>
-    <h2>My Projects</h2>
-    <ul>
-      <li><a href="https://link-to-your-project1.com">Project 1</a></li>
-      <li><a href="https://link-to-your-project2.com">Project 2</a></li>
-      <!-- Add more projects as needed -->
-    </ul>
-  </section>
+  
+  <div class="container">
+    <section>
+      <h2>Projects & Experience</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Python & R Package Development</h3>
+          <p>Explore my development experience with Python and R packages.</p>
+          <p><a href="https://github.com/ACCLAB/DABEST-python" target="_blank">View Project</a></p>
+        </div>
+        <div class="card">
+          <h3>CHI 2025 Paper: ViFeed</h3>
+          <p>Co-authored (3rd author) paper "ViFeed: Promoting Slow Eating and Food Awareness through Strategic Video Manipulation during Screen-Based Dining", accepted by CHI 2025.</p>
+          <p><a href="https://github.com/Lucas1213WZY/solo-eater-opt" target="_blank">View Paper Repository</a></p>
+        </div>
+        <div class="card">
+          <h3>GHG Calculator for Singapore Office Buildings</h3>
+          <p>Led a team of 9 to design and build a GHG emission calculator for office buildings (Grade A) as part of my Master Course: Data Science in Practice (2024).</p>
+          <p><a href="https://github.com/Lucas1213WZY/DSS5105-YYDS.git" target="_blank">View Calculator Project</a></p>
+        </div>
+        <div class="card">
+          <h3>AI Chatbot & NLP</h3>
+          <p>Built an AI chatbot using H2O.ai for automated resume screening and NLP-based skill extraction in 2024.</p>
+          <p><a href="https://github.com/Oliverzhang0314/llm-app-dev-dsa4213" target="_blank">View Chatbot Project</a></p>
+        </div>
+        <div class="card">
+          <h3>Final Year Project</h3>
+          <p>Applied transfer learning with GLMs for image classification (Grade A) during 2023-2024.</p>
+          <p><a href="https://github.com/Lucas1213WZY/DSA4199_ZHUOYU" target="_blank">View Final Year Project</a></p>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 [Wang Zhuoyu (Lucas)]. All rights reserved.</p>
+  </footer>
 </body>
 </html>
